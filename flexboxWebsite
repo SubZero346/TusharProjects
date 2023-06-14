@@ -1,0 +1,395 @@
+// Iftekhar Zaman
+// Tushar Project: Flexbox Website
+
+// HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Website #2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    </style>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2><a href="/">ERP</a></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner-area">
+        <div class="banner-image"></div>
+        <h1>ERP Provide Solutions To Your Business Needs<br>Whatever They Maybe.</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Explicabo totam sequi mollitia<br>
+            repellendus, vero consectetur nostrum maxime harum sed perferendis assumenda amet<br>
+            ducimus dolor sapiente magnam quasi id placeat dignissimos.
+        </p>
+        <form action="" id="subscription-form">
+            <input type="text" class="subscription-input" placeholder="Enter your name"><br>
+            <input type="email" class="subscription-input" placeholder="Enter your email"><br>
+            <button id="subscription-button">SUBSCRIBE</button>
+        </form>
+    </section>
+
+    <section class="home-area" id="home">
+        <ul class="home-content">
+            <li>
+                <h3>ERP is all about excellence in the world of business</h3>
+                <img src="working.jpg" alt="">
+            </li>
+            <li>
+                <h3>Our History</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum odit rerum obcaecati numquam sed fuga excepturi eius 
+                    voluptatem. 
+                    Ipsa sint ducimus obcaecati inventore enim. 
+                    Eveniet nisi assumenda aspernatur officia veritatis.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum odit rerum obcaecati numquam sed fuga excepturi eius 
+                    voluptatem. 
+                    Ipsa sint ducimus obcaecati inventore enim. 
+                    Eveniet nisi assumenda aspernatur officia veritatis.
+                </p>
+                <button class="home-content-button">READ MORE</button>
+            </li>
+            <li>
+                <h3>Vision & Mission</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum odit rerum obcaecati numquam sed fuga excepturi eius 
+                    voluptatem. 
+                    Ipsa sint ducimus obcaecati inventore enim. 
+                    Eveniet nisi assumenda aspernatur officia veritatis.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum odit rerum obcaecati numquam sed fuga excepturi eius 
+                    voluptatem. 
+                    Ipsa sint ducimus obcaecati inventore enim. 
+                    Eveniet nisi assumenda aspernatur officia veritatis.
+                </p>
+                <button class="home-content-button">READ MORE</button>
+            </li>
+        </ul>
+    </section>
+
+    <div class="about-area" id="about">
+        <div class="row">
+            <div class="about-left-content">
+                <h3>What we can do for you</h3>
+                <h1>About Us</h1>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br><br>
+                    Totam necessitatibus impedit nesciunt ea maxime magnam 
+                    facilis mollitia error voluptatum quae dicta perferendis 
+                    exercitationem, minima reprehenderit assumenda dolorem 
+                    et vel veritatis.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="about-right-content">
+                <div class="row">
+                    <div class="card">
+                        <i class="fa-brands fa-apple fa-3x"></i>
+                        <h2>IOS Development</h2>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-android fa-3x"></i>
+                        <h2>Android Development</h2>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-database fa-3x"></i>
+                        <h2>Database Management</h2>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-chart-line fa-3x"></i>
+                        <h2>Data Visualizations</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonial-area" id="testimonial">
+        <ul class="testimonial-content">
+            <li>
+                <img src="profile2.jpg" alt="" class="profile-pic">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita facere saepe sapiente voluptate iste itaque ut distinctio facilis, voluptatibus corrupti omnis fuga nam maiores sunt similique, qui totam natus?
+                </p>
+                <h3>Jane Doe</h3>
+            </li>
+            <li>
+                <img src="profile1.jpg" alt="" class="profile-pic">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita facere saepe sapiente voluptate iste itaque ut distinctio facilis, voluptatibus corrupti omnis fuga nam maiores sunt similique, qui totam natus?
+                </p>
+                <h3>Lara Smith</h3>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact-area" id="contact">
+        <h2>Contact Us</h2>
+        <form action="" id="contact-form">
+            <input type="text" class="contact-input" placeholder="Enter your name"><br>
+            <input type="email" class="contact-input" placeholder="Enter your email"><br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <button id="contact-button">SEND</button>
+        </form>
+    </section>
+
+    <footer>Copyright &copy; 2023</footer>
+</body>
+</html>
+
+// CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header/Nav */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+header h2 a{
+    text-decoration: none;
+    color: green;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    margin: 20px;
+    color: inherit;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 0px 100px 30px;
+}
+
+/* Banner Area & Subscription Form */
+
+.banner-area {
+    position: relative;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.banner-area h1 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.banner-area p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.banner-area .banner-image {
+    background-image: url("./conference.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+#subscription-form {
+    width: 50%;
+}
+
+.subscription-input {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    margin: 5px 0;
+}
+
+#subscription-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0px;
+    background: seagreen;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Home Area */
+
+ul.home-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-content li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    list-style-type: none;
+}
+
+.home-content li h3 {
+    margin-bottom: 10px;
+}
+
+.home-content li p {
+    margin-bottom: 30px;
+}
+
+.home-content-button {
+    width: 40%;
+    padding: 5px 0px;
+    color: white;
+    background: seagreen;
+    border: none;
+    border-radius: 5px;
+}
+
+.home-area .home-content li img {
+    width: 100%;
+    height: auto;
+}
+
+/* About Area */
+
+.about-area {
+    background: #222;
+    color: whitesmoke;
+    padding: 100px 0;
+}
+
+.row {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.about-left-content {
+    flex-basis: 50%;
+}
+
+.about-right-content {
+    flex-basis: 30%;
+}
+
+.card {
+    padding: 3rem 8rem;
+    color: #222;
+    background-color: #dcdcdc;
+    margin: 1.6rem;
+    text-align: center;
+}
+
+.testimonial-area {
+    background: #333;
+}
+
+ul.testimonial-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.testimonial-content li {
+    padding: 0 30px;
+    flex-basis: 50%;
+    list-style-type: none;
+    background: gray;
+    color: white;
+}
+.profile-pic {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contact-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-button {
+    width: 100%;
+    padding: 5px 0px;
+    color: white;
+    background: seagreen;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-area form input {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.contact-area form input, .contact-area form textarea, #contact-button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contact-area form textarea {
+    padding-top: 5px;
+    padding-left: 5px;
+    resize: none;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0px;
+    background: #333;
+    color: #fff;
+}
